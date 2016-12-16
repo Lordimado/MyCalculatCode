@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="284.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px; -fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutY="52.0" prefHeight="352.0" prefWidth="284.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 40px;">
+         <children>
+            <Button fx:id="zero" layoutX="27.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #C0C0C0; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="0" />
+            <Button fx:id="virgule" layoutX="130.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="." />
+            <Button fx:id="two" layoutX="79.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="2" />
+            <Button fx:id="three" layoutX="130.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="3" />
+            <Button fx:id="one" layoutX="27.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="1" />
+            <Button fx:id="four" layoutX="27.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="4" />
+            <Button fx:id="five" layoutX="79.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="5" />
+            <Button fx:id="six" layoutX="130.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="6" />
+            <Button fx:id="seven" layoutX="27.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="7" />
+            <Button fx:id="eight" layoutX="79.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="8" />
+            <Button fx:id="nine" layoutX="130.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="9" />
+            <Button fx:id="SUBSTRACT" layoutX="179.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #D3D3D3;" text="-" />
+            <Button fx:id="ADD" layoutX="179.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #D3D3D3;" text="+" />
+            <Button fx:id="EQUAL" layoutX="233.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="87.0" prefWidth="37.0" style="-fx-background-color: #20FFFF; -fx-background-radius: 20px;" text="=" />
+            <Button fx:id="INVERSE" layoutX="233.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="1/x" />
+            <Button fx:id="MULTIPLE" layoutX="179.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #D3D3D3;" text="*" />
+            <Button fx:id="DIVISION" layoutX="179.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #D3D3D3;" text="/" />
+            <Button fx:id="POURCENTAGE" layoutX="233.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="\%" />
+            <Button fx:id="PI" layoutX="179.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="π" />
+            <Button fx:id="C" layoutX="130.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #C0C0C0; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="C" />
+            <Button fx:id="CE" layoutX="79.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="CE" />
+            <Button fx:id="PLUSOUMOIN" layoutX="27.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="±">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="op" editable="false" layoutX="27.0" layoutY="14.0" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="245.0" />
+            <TextField fx:id="result" editable="false" layoutX="27.0" layoutY="65.0" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="245.0" text="=">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button layoutX="233.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleOnAnyButtonClicked" prefHeight="38.0" prefWidth="37.0" text="X²" />
+         </children>
+      </Pane>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#About" prefHeight="29.0" prefWidth="99.0" text="About .." />
+   </children>
+</Pane>
